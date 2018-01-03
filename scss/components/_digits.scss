@@ -1,0 +1,47 @@
+@font-face {
+    font-family: $digital;
+    src: url("../fonts/digital-7.regular.eot")/* EOT file for IE */
+}
+
+@font-face {
+    font-family: $digital;
+    src: url("../fonts/digital-7.regular.ttf")/* TTF file for CSS3 browsers */
+}
+
+.digits-container {
+    display: inline-block;
+    background: $black;
+    width: auto;
+}
+
+.digit {
+    display: inline-block;
+    position: relative;
+    width: 45px;
+    height: 35px;
+    background: $black;
+
+    font-family: $digital;
+    font-size: $base-font-size * 1.5;
+    color: darken($red, 30%);
+}
+
+.digit span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 35px;
+    text-align: right;
+    line-height: 40px;
+}
+
+.digit-number {
+    z-index: 99;
+    text-align: right;
+    color: darken($red, 25%);
+
+    &.active {
+        color: $red;
+    }
+}

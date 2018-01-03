@@ -1,0 +1,40 @@
+#panel {
+    display: block;
+    margin-top: $base-margin;
+    text-align: center;
+}
+
+#creditsContainer:after {
+    content: '';
+    height: 0;
+    display: block;
+}
+
+.panel-section {
+    border: $base-border;
+    border-color: $silver;
+    border-radius: $base-border-radius;
+    padding: 10px;
+    display: inline-block;
+    color: $silver;
+}
+
+.panel-section h2 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: $base-font-size;
+}
+
+.panel-section.active {
+   border-color: darken($orange, 20%);
+   @include glow($orange);
+}
+
+.panel-section#win {
+    margin-right: 100px;
+}
+
+.panel-section#nudges {
+    margin-left: 10px;
+}

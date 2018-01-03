@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'base/base.scss';
+
+@import 'components/play-section';
+@import 'components/viewport';
+@import 'components/panel';
+@import 'components/reels';
+@import 'components/buttons';
+@import 'components/digits';
+@import 'components/win-indicator';
+@import 'components/game-over-section';

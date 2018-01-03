@@ -1,0 +1,67 @@
+.win-indicator {
+    width: 100px;
+    height: 50px;
+    border: $base-border;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    border-radius: $base-border-radius;
+    color: $grey;
+    display: none;
+}
+
+.win-indicator.left {
+    left: 0;
+}
+
+.win-indicator.right {
+    right: 0;
+}
+
+.win-indicator:after {
+    content: 'WIN';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+
+.win-indicator.active {
+    animation: win-indicator-flash 0.5s infinite;
+}
+
+.win-indicator.active:after {
+    animation: win-indicator-flash 0.5s infinite;
+}
+
+.win-indicator-centre-line {
+    position: absolute;
+    top: 50%;
+    height: 0px;
+    margin-top: -1px;
+    border-top: $base-border;
+    border-color: $silver;
+    opacity: 0.5;
+}
+
+.win-indicator-centre-line.active {
+    animation: win-indicator-flash 0.5s infinite;
+}
+
+@keyframes win-indicator-flash {
+    0% {
+       
+    }
+    50% {
+        opacity: 1;
+        @include highlight($orange);
+    }
+    100% {
+    }
+}

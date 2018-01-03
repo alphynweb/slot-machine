@@ -1,0 +1,24 @@
+@mixin glow($color) {
+    box-shadow: 0px 0px 8px 2px $color;
+}
+
+// Mixin for button colour styles
+@mixin button-color($color) {
+    border-color: darken($color, 20%);
+    background-color: $color;
+    background-image: linear-gradient(darken($color, 10%), lighten($color, 5%));
+}
+
+@mixin button-color-active($color) {
+    border-color: darken($color, 20%);
+    background-color: $color;
+    background-image: linear-gradient(darken($color, 10%), lighten($color, 5%));
+    @include glow($color);
+}
+
+// Basic highlighting 
+@mixin highlight($color) {
+    border-color: $color;
+    background-color: $color;
+    @include glow($color);
+}
