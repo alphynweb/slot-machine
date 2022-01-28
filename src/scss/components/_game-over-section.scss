@@ -1,0 +1,11 @@
+#gameOverSection {
+    font-size: $base-font-size;
+    text-align: center;
+
+    #startButton {
+        
+        &:before {
+            animation: button-block-flash $base-timing infinite;
+        }
+    }
+}

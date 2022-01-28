@@ -1,0 +1,35 @@
+#gambleSection {
+    display: flex;
+    flex: 1;
+
+    #bonusReelContainer {
+        display: flex;
+        margin-right: auto;
+        z-index: 99;
+        margin-left: 100px;
+        width: 100px;
+        position: relative;
+        z-index: 80;
+
+        #bonusReel {
+            z-index: 99;
+        }
+
+        #bonusCentreLine {
+            position: absolute;
+            top: 50%;
+            left: -20px; // -px has to be equal to REEL_CONTAINER_PADDING
+            height: 0px;
+            margin-top: -1px;
+            border-top: $base-border;
+            border-color: $highlight-color;
+            opacity: 0.5;
+            z-index: 99;
+            width: calc(100% + 40px); // px has to be twice the REEL_CONTAINER_PADDING
+        
+            &.active {
+                animation: border-flash $base-timing infinite;
+            }
+        }
+    }
+}

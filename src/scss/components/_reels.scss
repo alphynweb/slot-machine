@@ -1,0 +1,14 @@
+.reel-container{
+    
+}
+
+.reel-container {
+    border: $base-border;
+    border-color: $highlight-color;
+    border-radius: $base-border-radius;
+    background: black;
+
+    &.active {
+        animation: border-flash $base-timing infinite;
+    }
+}

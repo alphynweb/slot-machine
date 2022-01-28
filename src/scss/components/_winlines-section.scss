@@ -1,0 +1,53 @@
+#winLinesSection {
+    display: flex;    
+    flex: 1;
+    
+    #winLines {
+        width: auto;
+        margin-left: auto;
+        margin-right: 100px;
+        background: black;
+        border: $base-border;
+        border-color: $highlight-color;
+        border-radius: $base-border-radius;
+        padding: $base-padding / 2 $base-padding;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .winline {
+        display: flex;
+        width: 100%;
+        height: 32px;
+        padding: 5px 10px;
+        margin: 2px 0;
+
+        img {
+            display: block;
+            height: 100%;
+            width: auto;
+        }
+
+        .win-amount {
+            display: inline-block;
+            height: 100%;
+            vertical-align: top;
+
+            span {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                color: $text-color;
+                margin-left: $base-margin;
+                font-family: digital-7;
+                letter-spacing: 0.1rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        &.active {
+            animation: border-flash $base-timing infinite;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+#playSection {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -150%;
+    align-items: center;
+    padding-top: $base-padding * 2;
+    width: 400%;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+}

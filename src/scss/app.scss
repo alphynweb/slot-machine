@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'base/base';
+
+@import 'layout/settings';
+
+@import 'components/controls-section';
+@import 'components/game-section-container';
+@import 'components/gamble-section';
+@import 'components/play-section';
+@import 'components/viewport';
+@import 'components/panel';
+@import 'components/reels';
+@import 'components/buttons';
+@import 'components/digits';
+@import 'components/win-indicator';
+@import 'components/winlines-section';
+@import 'components/game-over-section';

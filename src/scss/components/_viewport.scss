@@ -1,0 +1,11 @@
+#viewportContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: auto;  
+    margin: auto;
+
+    canvas#viewport {
+        z-index: 80;
+    }
+}

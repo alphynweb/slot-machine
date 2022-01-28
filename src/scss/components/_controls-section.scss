@@ -1,0 +1,24 @@
+#controlsSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: $base-padding * 2;
+    width: 200%;
+    position: relative;
+    left: -50%;
+
+    &.hide {
+        display: none;
+    }
+
+    .buttons-section-container {
+        width: 100%;
+        text-align: center;
+        padding-bottom: $base-padding;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+}

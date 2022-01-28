@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <script src='./config.js'></script>
+</head>
+
+<body>
+    <div id="settings">
+        <span id="soundToggle"></span>
+    </div>
+
+    <div class="game-section-container">
+        <div id='panel'>
+
+            <div id='win' class='panel-section'>
+                <h2>WIN</h2>
+                <div class='digits-container'>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='credits' class='panel-section'>
+                <h2>CREDITS</h2>
+                <div id='credits' class='digits-container'>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id='nudges' class='panel-section'>
+                <h2>NUDGES</h2>
+                <div class='digits-container'>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                    <div class='digit'>
+                        <span class='digit-bg'>8</span>
+                        <span class='digit-number'></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="gameSection">
+
+            <div id="playSection">
+                <div id="winLinesSection">
+                    <div id="winLines"></div>
+                </div>
+                <div id="viewportContainer">
+                    <div id="winCentreLine"></div>
+                </div>
+                <div id="gambleSection">
+                    <div id="bonusReelContainer">
+                        <div id="bonusCentreLine"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="controlsSection">
+                <div class="buttons-section-container">
+                    <div id="nudgeButtonsContainer"></div>
+                </div>
+                <div class="buttons-section-container">
+                    <div id="holdButtonsContainer"></div>
+                </div>
+                <div class="buttons-section-container">
+                    <div id="spinButtonContainer"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="gameOverSection" class="hide">
+        <div>
+            <p>Game Over</p>
+            <p>You won <span id="winDisplayAmount"></span> credits</p>
+            <p>Press start to play again</p>
+        </div>
+
+        <button id="startButton" class="button">START</button>
+    </div>
+</body>
+
+</html>

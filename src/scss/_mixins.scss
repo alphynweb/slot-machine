@@ -1,0 +1,71 @@
+@mixin glow($color) {
+    box-shadow: 0px 0px 8px 2px $color;
+}
+
+@mixin text-glow($color) {
+    text-shadow: 0px 0px 8px $color;
+}
+
+// Mixin for button colour styles
+@mixin button-color($color) {
+    border-color: darken($color, 20%);
+    background-color: $color;
+    background-image: linear-gradient(darken($color, 10%), lighten($color, 5%));
+}
+
+@mixin button-color-active($color) {
+    border-color: $color !important;
+    background-color: $color;
+    background-image: linear-gradient(darken($color, 10%), lighten($color, 5%));
+    @include glow($color);
+}
+
+// Basic highlighting 
+@mixin highlight($color) {
+    border-color: $color;
+    background-color: $color;
+    @include glow($color);
+}
+
+@mixin border-highlight($color) {
+    border-color: $color;
+    @include glow($color);
+}
+
+// Keyframe animations
+@keyframes block-flash {
+    0% {
+       
+    }
+    50% {
+        opacity: 1;
+        @include highlight($highlight-color);
+    }
+    100% {
+    }
+}
+
+@keyframes button-block-flash {
+    0% {
+       
+    }
+    50% {
+        opacity: 1;
+        @include button-color-active($highlight-color);
+    }
+    100% {
+    }
+}
+
+@keyframes border-flash {
+    0% {
+       
+    }
+    50% {
+        opacity: 1;
+        @include border-highlight($highlight-color);
+    }
+    100% {
+    }
+}
+

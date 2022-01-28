@@ -1,0 +1,27 @@
+#panel {
+    display: flex;
+    justify-content: center;
+    // padding-top: $base-padding;
+
+    .panel-section {
+        border: $base-border;
+        border-color: $highlight-color;
+        border-radius: $base-border-radius;
+        padding: 10px;
+        display: inline-block;
+        color: $highlight-color;
+        background: black;
+        margin: 0 $base-margin;
+
+        h2 {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 5px;
+            font-size: $base-font-size;
+        }
+
+        &.active {
+            animation: border-flash $base-timing infinite;
+        }
+    }
+}
